@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Sudoku</title>
+  <meta name="description" content="Large-print Sudoku with big numbers and buttons.">
+  <meta name="theme-color" content="#faf7ee">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Sudoku">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <section id="menu" class="screen" hidden>
+      <h1>Sudoku</h1>
+      <button id="continue" class="big green" hidden>Back to my puzzle</button>
+      <p class="label">Start a new puzzle:</p>
+      <button class="big" data-level="easy">Easy</button>
+      <button class="big" data-level="medium">Medium</button>
+      <button class="big" data-level="hard">Hard</button>
+      <button id="show-install" class="link" hidden>Put this game on my Home Screen</button>
+    </section>
+
+    <section id="game" class="screen" hidden>
+      <div id="title" class="pos"></div>
+      <div id="board" class="pos"></div>
+      <button class="pos num" data-num="1">1</button>
+      <button class="pos num" data-num="2">2</button>
+      <button class="pos num" data-num="3">3</button>
+      <button class="pos num" data-num="4">4</button>
+      <button class="pos num" data-num="5">5</button>
+      <button class="pos num" data-num="6">6</button>
+      <button class="pos num" data-num="7">7</button>
+      <button class="pos num" data-num="8">8</button>
+      <button class="pos num" data-num="9">9</button>
+      <button id="erase" class="pos">Erase</button>
+      <button id="undo" class="pos">Undo</button>
+      <button id="new" class="pos">New Puzzle</button>
+      <div id="hint" class="pos">Tap a square, then a number.</div>
+      <div id="solved" class="pos" hidden>
+        <div class="card">
+          <div class="well-done">Well done!</div>
+          <button id="again" class="big">Play again</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="install" class="screen" hidden>
+      <h2 id="install-title">Put Sudoku on your Home Screen</h2>
+      <div id="install-ios" hidden>
+        <ol>
+          <li>Tap the <b>Share</b> button <span class="share-icon" aria-hidden="true"></span> in Safari.<br>
+            <small>(If you can't see it, tap <b>•••</b> first.)</small></li>
+          <li>Scroll down and tap <b>Add to Home Screen</b>.</li>
+          <li>Tap <b>Add</b>.</li>
+          <li>Close Safari and open <b>Sudoku</b> from your Home Screen.</li>
+        </ol>
+      </div>
+      <div id="install-android" hidden>
+        <a class="big green" href="sudoku.apk" download>Download the app</a>
+        <ol>
+          <li>Tap <b>Download the app</b> above.</li>
+          <li>Open the downloaded file.</li>
+          <li>If the phone asks, tap <b>Settings</b>, turn on <b>Allow from this source</b>, then go back.</li>
+          <li>Tap <b>Install</b>. If a "Play Protect" box appears, tap <b>Install anyway</b>.</li>
+        </ol>
+      </div>
+      <button id="install-done" class="big">Play now</button>
+    </section>
+
+  </div>
+  <script src="sudoku.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

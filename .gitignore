@@ -1,0 +1,9 @@
+.DS_Store
+bin/
+obj/
+android/build/
+dist/*.idsig
+
+# Android signing key: keep private and backed up, never publish
+android/release.keystore
+android/keystore.properties
