@@ -1,7 +1,7 @@
 // Lets the game open with no internet connection.
 // Serves files from the cache straight away and refreshes the cache in the background,
 // so updates appear the next time the game is opened.
-const CACHE = 'sudoku-v1';
+const CACHE = 'sudoku-v2';
 const FILES = [
   './', 'index.html', 'style.css', 'sudoku.js', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',

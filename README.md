@@ -14,7 +14,7 @@ If Windows shows **"Windows protected your PC"**, click **More info**, then **Ru
 
 ### iPhone
 1. Open **https://rlx.github.io/sudoku/** in **Safari**.
-2. Tap the Share button (square with an arrow ↑; on newer iPhones tap **•••** first).
+2. Tap the Share button (square with an arrow ↑; on newer iPhones, first tap the menu button next to the web address).
 3. Tap **Add to Home Screen**, then **Add**.
 4. Open Sudoku from the Home Screen. It runs full-screen and works without internet.
 
